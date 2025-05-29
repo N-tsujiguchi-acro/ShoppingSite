@@ -30,6 +30,8 @@ public class Login_In extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		response.setContentType("text/html; charset=UTF-8");
+		
 		String id = request.getParameter("id");
 		String pass = request.getParameter("password");
 		

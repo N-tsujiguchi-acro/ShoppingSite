@@ -8,6 +8,7 @@
 <title>メニュー画面</title>
 </head>
 <body>
+<%@ include file="globalMenu.jsp" %>
 <div class="main">
 	<%
 	
@@ -27,9 +28,10 @@
 		</form>
 
 		
-		<form action="logout.jsp" method="post" style="display: inline;">
+		<form action="logout.jsp" method="get" style="display: inline;">
 		    <button type="submit">ログアウト</button>
 		</form>
+
 	
 	</div>
 

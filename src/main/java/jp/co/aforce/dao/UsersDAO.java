@@ -24,11 +24,10 @@ public class UsersDAO  extends DAO{
 			ResultSet rs = st.executeQuery();
 			
 			if (rs.next()) {
-			    user = rs.getString(1);
-			    System.out.println("取得成功: " + user);
-			} else {
-			    System.out.println("該当するユーザーが見つかりません");
-			}
+			    user = rs.getString("FULL_NAME");
+			    
+			    
+			} 
 
 			
 			  rs.close();

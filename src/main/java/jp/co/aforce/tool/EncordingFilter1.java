@@ -26,7 +26,7 @@ public class EncordingFilter1 extends HttpFilter implements Filter {
     }
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-		response.setContentType("text/html; charset=UTF-8");
+//		response.setContentType("text/html; charset=UTF-8");
 		request.setCharacterEncoding("UTF-8");
 		
 		System.out.println("フィルター前の処理");

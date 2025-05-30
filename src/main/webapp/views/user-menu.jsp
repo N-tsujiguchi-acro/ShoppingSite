@@ -1,3 +1,4 @@
+<%@page import="jp.co.aforce.servlet.UserInfo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -12,10 +13,10 @@
 <div class="main">
 	<%
 	
-	String username = (String) session.getAttribute("userName");
+	UserInfo userName = (UserInfo) session.getAttribute("userName");
 	
 	%>
-	<h2>ようこそ！<%=username %>さん</h2>
+	<h2>ようこそ！<%=userName.getFullName() %>さん</h2>
 	<div class="button">
 		<form action="edit.jsp" method="get" style="display: inline;">
 		    <button type="submit">修正</button>

@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import jp.co.aforce.beans.UserInfo;
 import jp.co.aforce.beans.Users;
-import jp.co.aforce.servlet.UserInfo;
 
 public class UsersDAO  extends DAO{
 	public UserInfo getUserInfo(String id, String pass) {

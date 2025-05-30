@@ -1,3 +1,4 @@
+<%@page import="jp.co.aforce.servlet.UserInfo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -9,7 +10,7 @@
 <body>
 <%
     // セッションを取得して破棄
-   String username = (String) session.getAttribute("userName");
+   UserInfo username = (UserInfo) session.getAttribute("userName");
     if (session != null) {
         session.invalidate();
     }
